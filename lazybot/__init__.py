@@ -36,7 +36,7 @@ class LazyPrincessXBot(Client):
             plugins={"root": "plugins"},
             sleep_threshold=5,
         )
-    async def iter_messages(
+    asyncio def iter_messages(
         self,
         chat_id: Union[int, str],
         limit: int,
